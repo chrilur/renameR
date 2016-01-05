@@ -10,7 +10,7 @@ telleslutt <- telle + ant - 1
 for (i in telle:telleslutt) {
   nr <- i + ant - telleslutt
   filgml <- filer[nr]
-  filnr <- nr
+  filnr <- i
   filnr <- ifelse(filnr < 10, paste0("0", filnr), filnr) #Virker for opptil 99 filer
   filny <- paste0(fil1,filnr,fil3)
   file.rename(paste0(sti,filgml), paste0(sti,filny))
